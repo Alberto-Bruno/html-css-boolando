@@ -31,26 +31,29 @@ header {
 
 /*Menubar*/
 
-a {
-    position: relative;
-    bottom: 10px;
-    padding: 5px;
+.menubar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menubar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
 
 .logo {
-    height: 30px;
-    vertical-align: middle;
-    position: relative;
-    left: 45%;
-    top: 20px;
+   height: 30px;
+   display: block;
+   margin: 0 auto;
 }
 
 .btn{
-    border-radius: 5px;
     padding: 5px 10px;
     color: white;
-    border: 1px solid transparent;
     cursor: pointer;
 }
 
