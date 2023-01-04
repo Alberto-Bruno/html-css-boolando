@@ -5,63 +5,156 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Booleando</title>
-        <link rel="stylesheet" href="style.css">
+
+        <link 
+          rel='stylesheet' 
+          href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' 
+          integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' 
+          crossorigin='anonymous'
+          />
+
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-            <div class="container">
-                <img class="logo" src="img/boolean-logo.png" alt="logo">
-                <nav>
-                    <div>
-                        <a class="btn" type="#">Donna</a>
-                        <a class="btn" type="#">Uomo</a>
-                        <a class="btn" type="#">Bambino</a>
-                    </div>
-                    <div class="login">
-                        <a href="#"></a>
-                    </div>
-                </nav>
-            </div>
-
-            <div class="image-container">
-                <div class="box">
-                    <img id="image" src="img/1.webp">
-                    <span class="discount bg-red">-50%</span>
-                    <div class="heart">&hearts;</div>
-                    
+            <nav class="navbar container">
+                <div class="navbar-left">
+                    <ul>
+                        <li><a href="#">Donna</a></li>
+                        <li><a href="#">Uomo</a></li>
+                        <li><a href="#">Bambino</a></li>
+                    </ul>
                 </div>
-                    
-                <div class="box">
-                    <img id="image" src="img/2.webp">
-                    <span class="discount bg-red">-30%</span>
-                    <div class="heart">&hearts;</div>
+                <div class="navbar-center"><img src="img/boolean-logo.png" alt="Logo" id="logo"></div>
+                <div class="navbar-right">
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    </ul>
                 </div>
-                    
-                <div class="box">
-                    <img id="image" src="img/3.webp">
-                    <span class="discount bg-red">-30%</span>
-                    <div class="heart">&hearts;</div>
-                </div>
-
-                <div class="box">
-                    <img id="image" src="img/4.webp">
-                    <span class="discount bg-red">-30%</span>
-                    <div class="heart">&hearts;</div>
-                </div>
-
-                <div class="box">
-                    <img id="image" src="img/5.webp">
-                    <span class="discount bg-red">-30%</span>
-                    <div class="heart">&hearts;</div>
-                </div>
-
-                <div class="box">
-                    <img id="image" src="img/6.webp">
-                    <span class="discount bg-red">-30%</span>
-                    <div class="heart">&hearts;</div>
-                </div>
-            </div>
+            </nav>
         </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/1.webp" alt="Levi's" class="main">
+                                <img src="img/1b.webp" alt="Levi's" class="hover">
+                                <div class="heart">&hearts;</div>
+                                <div class="card-badges">
+                                    <span class="badge bg-red">-50%</span>
+                                    <span class="badge bg-green">Sostenibilit&agrave;</span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <span class="artcle-brand">Levi's</span>
+                                <h4 class="article-name">relaxed fit tee unisex</h4>
+                                <strong class="article-price">€14,99</strong> <del>€29,99</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/2.webp" alt="Guess" class="main">
+                                <img src="img/2b.webp" alt="Guess" class="hover">
+                                <div class="heart">&hearts;</div>
+                                <div class="card-badges">
+                                    <span class="badge bg-red">-50%</span>
+                                    <span class="badge bg-green">Sostenibilit&agrave;</span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <span class="artcle-brand">Guess</span>
+                                <h4 class="article-name">Roses TEE</h4>
+                                <strong class="article-price">€20,99</strong> <del>€29,99</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/3.webp" alt="Levi's" class="main">
+                                <img src="img/3b.webp" alt="Levi's" class="hover">
+                                <div class="heart">&hearts;</div>
+                                <div class="card-badges">
+                                    <span class="badge bg-red">-50%</span>
+                                    <span class="badge bg-green">Sostenibilit&agrave;</span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <span class="artcle-brand">Come Zucchero filato</span>
+                                <h4 class="article-name">Voglia di colori pastello</h4>
+                                <strong class="article-price">€129,99</strong> <del>€184,99</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/1.webp" alt="Levi's" class="main">
+                                <img src="img/1b.webp" alt="Levi's" class="hover">
+                                <div class="heart">&hearts;</div>
+                                <div class="card-badges">
+                                    <span class="badge bg-red">-50%</span>
+                                    <span class="badge bg-green">Sostenibilit&agrave;</span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <span class="artcle-brand">Levi's</span>
+                                <h4 class="article-name">relaxed fit tee unisex</h4>
+                                <strong class="article-price">€14,99</strong> <del>€29,99</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/1.webp" alt="Levi's" class="main">
+                                <img src="img/1b.webp" alt="Levi's" class="hover">
+                                <div class="heart">&hearts;</div>
+                                <div class="card-badges">
+                                    <span class="badge bg-red">-50%</span>
+                                    <span class="badge bg-green">Sostenibilit&agrave;</span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <span class="artcle-brand">Levi's</span>
+                                <h4 class="article-name">relaxed fit tee unisex</h4>
+                                <strong class="article-price">€14,99</strong> <del>€29,99</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/1.webp" alt="Levi's" class="main">
+                                <img src="img/1b.webp" alt="Levi's" class="hover">
+                                <div class="heart">&hearts;</div>
+                                <div class="card-badges">
+                                    <span class="badge bg-red">-50%</span>
+                                    <span class="badge bg-green">Sostenibilit&agrave;</span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <span class="artcle-brand">Levi's</span>
+                                <h4 class="article-name">relaxed fit tee unisex</h4>
+                                <strong class="article-price">€14,99</strong> <del>€29,99</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
 
         <footer>
             <div class="foot-container">

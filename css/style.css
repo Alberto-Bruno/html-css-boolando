@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 100px;
+}
+
+/* Utils */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: orange;
+    color: white;
+    height: 70px;
+    padding: 10px;
+    box-shadow: 0 1px 3px gray;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar */
+#logo {
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar > * {
+    flex-basis: calc(100% / 3);
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right ul {
+    justify-content: flex-end;
+}
+
+/* Main */
+
+main {
+    padding: 20px;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -10px; 
+}
+
+.col {
+    flex-basis: calc(100% / 3);
+    padding: 10px;
+    min-height: 500px;
+}
+
+/* Cards */
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card-image img {
+    height: auto;
+    max-width: 350px;
+    display: block;
+}
+
+.card-image img.hover {
+    display: none;
+}
+.card-image:hover img.hover {
+    display: block;
+}
+.card-image:hover img.main {
+    display: none;
+} 
+
+/* Hearts */
+
+.card-image.heart {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    display: inline block;
+    text-align: center;
+    line-height: 50px;
+
+    cursor: pointer;
+}
+.article-price,
+.card-image .heart:hover {
+    color: red;
+}
+
+
+/* Badges */
+
+.card-badges {
+    position: absolute;
+    left: 175px;
+    bottom: 100px;
+}
+
+.badge {
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.card-text {
+    padding: 5px 0;
+}
+
+.card-text .article-name {
+    text-transform: uppercase;
+}
